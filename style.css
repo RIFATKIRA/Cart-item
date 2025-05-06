@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height:100%;
+    display: grid;
+    place-items: center;
+    background-color: blueviolet;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:300px;
+    width: 600px;
+
+}
+.left{
+    width:50%;
+    height:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 12;
+}
+.logo{
+    font-size: 24px;
+    margin-top: 18px;
+
+}
+.star{
+    color:blueviolet;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.about{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+button{
+    display: flex;
+    padding: 10px;
+    background-color: blueviolet;
+    color:#e3e2e6;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+
+}
+button h2{
+    color: white;
+}
+.right{
+    background: url('wesley-tingey-sPBRRwT_fKA-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    width:50%;
+    border-radius: 0 5px 5px 0;
+
+}
+
+ul{
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.8);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px 26px;
+    border-radius: 5px;
+    margin-left: -300px;
+
+}
+li{
+    font-size: 16px;
+    color:white;
+}
+.right:hover ul{
+    margin-left: 0;
+    transition: all 0.4s linear;
+}
